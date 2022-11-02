@@ -1,21 +1,22 @@
 # sql1
 
-Abschlussprojekt: Musikgeschäft von
-Gabriela Rotari (Göttingen), Haithm Abdo Qasem Yahya (Passau), Lisa Kiel (Düsseldorf), Stefan Ruthenberg (Münster)
+Final group project to get the _Programming in SQL_ qualification: __Music store__
 
-Ein Münchner Musikgeschäft bietet ihren Kunden eine reiche Auswahl an Musikinstrumenten, passendem Zubehör und Ersatzteilen.
-Natürlich kann man auch Noten bestellen. 
+A Munich music store offers its customers a rich selection of musical instruments, accessories, spare parts and sheet music.
 
-Die Kundendaten werden folgenderweise erfasst: KundeID, Nachname, Vorname, Ort, Straße, Hausnummer, Telefon und Mobil.
+### Components
 
-Für alle Produkte werden deren Lagerstatus (auf Lager, ausverkauft, bestellt, verfügbar), der Einkaufspreis (EK), Verkaufspreis (VK) und die Mehrwertsteuer erfasst.
-Die Instrumente unterscheiden sich nach Instrumentenarten, Gewicht, Preis und Zustand (neu, gebraucht, nicht verkaufbar, retour). 
-Die erfassten Daten der angebotenen Noten sind: Titel, ISBN und für welche Instrumentenart die Noten sind. 
-Beim Zubehoer kann nach der Instrumentenart gesucht werden.
+__Customer data__ is recorded as follows: CustomerID, last name, first name, city, street, house number, phone and mobile.
 
-Für den Laufprozess des Geschäftes ist Personal zuständig: (Position-Tabelle: PositionID, Leitung, Verkauf, Lagerung, Buchhaltung, Marketing, Service). 
-Die folgenden Daten des Personals werden erfasst: PersonalID, Nachname, Vorname, Ort, Straße, Hausnr., Telefon, Mobil und Geburtsdatum.
+For each __product__, its stock status (in stock, sold out, ordered, available), purchase price (EK), sales price (VK) and VAT is registered.
+The __instruments__ are differentiated by instrument type, weight, price and condition (new, used, not for sale, returned). 
+The recorded data of the __sheet music__ is: Title, ISBN and for which instrument type the sheet music is. 
+In the case of __accessories__, these can be searched by the type of instrument.
 
-Für jede Bestellung wird die KundenID und das Bestelltdatum erfasst. 
-Jeder Rechnung wird die BestellungsID und KundenID zugewiesen, sowie das Rechnungsdatum erfasst und von welchem Personal der Kunde betreut wurde.
-Für jede Produktkategorie wird in einer separaten Tabelle erfasst, welches Produkt und wie viel Stück (Anzahl) bestellt worden sind.
+Personnel is responsible for the __running processes of the store__: (Position table: PositionID, Management, Sales, Storage, Accounting, Marketing, Service). 
+The following __data of the personnel__ is recorded: PersonalID, last name, first name, city, street, house no., phone, mobile and date of birth.
+
+By each __order__, the CustomerID and the order date are registered. 
+An __invoice__ is set up by a order ID, customer ID, invoice date and the personnel, by which the customer was served.
+For each product category, a separate table catalogues the product and its amount of orders.
+
